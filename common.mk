@@ -92,16 +92,8 @@ PRODUCT_PACKAGES += \
     audio.primary.holi \
     audio.r_submix.default \
     audio.usb.default \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
-    libvisualizer \
     libhdmiedid \
     libhfp \
     libsndmonitor \
