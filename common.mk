@@ -92,16 +92,8 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     liba2dpoffload \
     firmware_aw_cali.bin_symlink \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
-    libvisualizer \
     libhdmiedid \
     libhfp \
     libsndmonitor \
