@@ -289,10 +289,6 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RFS MSM MPSS symlinks
 PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_vendor_fsg_symlink
