@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
     NoNearbySharingOverlay \
     SystemUIResCommon_Sys \
-    TelecommResCommon_Sys \
     TelephonyResCommon_Sys \
     WifiResCommon_Sys \
     FrameworksResTarget \
