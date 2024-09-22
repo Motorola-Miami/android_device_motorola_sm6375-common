@@ -1,7 +1,8 @@
 [
   {
-    "repository": "AICP/hardware_motorola",
+    "repository": "Rakhshan/hardware_motorola",
     "target_path": "hardware/motorola"
+    "branch": "lineage-21"
   },
   {
     "repository": "LineageOS/android_system_qcom",
