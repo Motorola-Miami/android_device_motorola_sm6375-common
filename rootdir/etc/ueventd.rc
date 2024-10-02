@@ -518,3 +518,18 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # socinfo
 /sys/devices/soc0                                       serial_number                   0000    root    root
+
+# wakeup nodes
+/sys/devices/virtual/wakeup/wakeup* active_count 0660 system system
+/sys/devices/virtual/wakeup/wakeup* active_time_ms 0660 system system
+/sys/devices/virtual/wakeup/wakeup* event_count 0660 system system
+/sys/devices/virtual/wakeup/wakeup* expire_count 0660 system system
+/sys/devices/virtual/wakeup/wakeup* last_change_ms 0660 system system
+/sys/devices/virtual/wakeup/wakeup* max_time_ms 0660 system system
+/sys/devices/virtual/wakeup/wakeup* name 0660 system system
+/sys/devices/virtual/wakeup/wakeup* prevent_suspend_time_ms 0660 system system
+/sys/devices/virtual/wakeup/wakeup* subsystem 0660 system system
+/sys/devices/virtual/wakeup/wakeup* total_time_ms 0660 system system
+/sys/devices/virtual/wakeup/wakeup* uevent 0660 system system
+/sys/devices/virtual/wakeup/wakeup* waiting_for_supplier 0660 system system
+/sys/devices/virtual/wakeup/wakeup* wakeup_count 0660 system system
