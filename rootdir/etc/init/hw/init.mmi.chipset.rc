@@ -1,3 +1,6 @@
+# Charge only mode configuration
+import /vendor/etc/init/hw/init.mmi.charge_only.rc
+
 on early-boot
     # Permission for Health Storage HAL
     chown system system /sys/devices/platform/soc/4804000.ufshc/manual_gc
