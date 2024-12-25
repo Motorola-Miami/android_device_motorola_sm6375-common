@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon_Sys \
     FrameworksResTarget \
     WifiResTarget \
+    NcmTetheringOverlay \
     EuiccOverlayMotoHoli
 
 # A/B
