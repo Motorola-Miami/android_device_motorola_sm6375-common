@@ -211,22 +211,15 @@ PRODUCT_ENABLE_UFFD_GC := false
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.motorola_holi
 
+# Media
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
+
 # Moto hardware
 PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
-
-# OMX
-PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libstagefrighthw
 
 # Permissions
 PRODUCT_COPY_FILES += \
