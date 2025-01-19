@@ -4,6 +4,7 @@
 # libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
 # libmdmcutback depends on libqsap_sdk, which is a gnu makefile target
 # libmotext_inf, libril-qcril-hook-oem depend on libril, which is a gnu makefile target
+# thermal-engine depends on libthermalclient, which is device specific
 
 # ADSP
 vendor/bin/adsprpcd
@@ -258,8 +259,8 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/lib/vendor.qti.diaghal@1.0.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
+vendor/lib/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display (HDR)
 vendor/lib64/libhdr_stub.so
@@ -314,12 +315,12 @@ system_ext/framework/dpmapi.jar
 system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib/libdpmctmgr.so
 system_ext/lib/libdpmfdmgr.so
-system_ext/lib/libdpmframework.so
+system_ext/lib/libdpmframework.so;DISABLE_CHECKELF
 system_ext/lib/libdpmtcm.so
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
-system_ext/lib64/libdpmframework.so
+system_ext/lib64/libdpmframework.so;DISABLE_CHECKELF
 system_ext/lib64/libdpmtcm.so
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
@@ -443,7 +444,7 @@ vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
 vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_app_profiles.so
+vendor/lib/libadreno_app_profiles.so;DISABLE_CHECKELF
 vendor/lib/libadreno_utils.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libgpudataproducer.so
@@ -535,7 +536,7 @@ vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 -vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
 vendor/etc/video_system_specs.json
-vendor/lib/libmmosal.so
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -543,7 +544,7 @@ vendor/lib/libqcodec2_hooks.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/libmmosal.so
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # OEM
 vendor/bin/motobox;SYMLINK=vendor/bin/expat
@@ -578,8 +579,8 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
 
 # QMI
 system/etc/permissions/privapp-permissions-qti.xml
@@ -813,8 +814,8 @@ system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libdiag_system.so
+system_ext/lib64/lib-imsvtutils.so;DISABLE_CHECKELF
+system_ext/lib64/libdiag_system.so;DISABLE_CHECKELF
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
@@ -923,7 +924,7 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Thermal engine
-vendor/bin/thermal-engine
+vendor/bin/thermal-engine;DISABLE_CHECKELF
 vendor/etc/init/init_thermal-engine.rc
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
@@ -1115,6 +1116,6 @@ vendor/lib/libwfduibcsinkinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
