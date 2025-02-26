@@ -6,9 +6,6 @@
 
 # Partitions
 PRODUCT_PACKAGES += \
-    vendor_bt_firmware_mountpoint \
-    vendor_dsp_mountpoint \
-    vendor_firmware_mnt_mountpoint \
     vendor_fsg_mountpoint
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
