@@ -499,9 +499,6 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
-# Nfc
-system_ext/app/NQNfcNci/NQNfcNci.apk
-
 # Media - configs
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_blair.xml
