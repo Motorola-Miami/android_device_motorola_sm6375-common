@@ -84,6 +84,8 @@
     <Settings>
         <Variant name="slow-cpu" enabled="true" />
     </Settings>
+   <!-- Include Dolby Audio MediaCodecs -->
+    <Include href="media_codecs_dolby_audio.xml" />
     <Encoders>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" variant="slow-cpu">
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
