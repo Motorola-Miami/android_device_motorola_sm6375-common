@@ -20,12 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Additional
-$(call inherit-product-if-exists, vendor/motorola/additional/additional-vendor.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-yaap
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -299,10 +296,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# RFS MDM MPSS symlinks
-PRODUCT_PACKAGES += \
-    rfs_mdm_mpss_readonly_vendor_fsg_symlink
-
 # RFS MSM MPSS symlinks
 PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_vendor_fsg_symlink
@@ -316,7 +309,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/motorola
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -373,9 +367,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
-
-# VNDK
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 
 # WiFi
 PRODUCT_PACKAGES += \
