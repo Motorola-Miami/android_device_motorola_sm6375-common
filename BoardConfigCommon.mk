@@ -192,3 +192,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 include vendor/motorola/sm6375-common/BoardConfigVendor.mk
+include hardware/motorola/dolby/BoardConfigVendor.mk
